@@ -4,51 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style type= text/css src= "assets/css/style.css" >
-    
-    .crystal-image {
-    width: 250px;
-    height: 250px;
-  }
-
-  body {
-    background-color: lightpink;
-    
-
-
-  }
-
-  h1 {
-    color: grey;
-
-
-  }
-    
-    
-    
-    
-    </style>
+    <link rel="stylesheet" type="text/css" href= "assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Crystal Counter</title>
     
 
 </head>
 <body>
+        <div class="container"> <div class="row"> <div class="col">
+        
+        <h1>Crystal Collector <span id="game-title"></span></h1>
+        <h2>Number to Guess: <span id="number-to-guess"></span></h2>
+        </div>
 
-        <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+        
         <div id="crystals">
                 <img class="crystal-image" src="assets/images/crystal.png">
                 <img class="crystal-image" src="assets/images/crystal3.png">
                 <img class="crystal-image" src="assets/images/crystal4.png">
                 <img class="crystal-image" src="assets/images/crystal5.png">
         </div>
+
+        
+        
         <br>
 
+        
+
         <div>
-                <div class= "randomNumber">Random Generated Number</div>
+                <div id="scoreboard" class="container"> <div class="row"> <div class="col">
                 <div>Wins: <span class="wins"></span></div>
                 <div>Losses: <span class="losses"></span></div>
                 <div>Total Score: <span class="totalScore"></span></div>
-    
+            </div>
             </div>
     
 

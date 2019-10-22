@@ -9,6 +9,7 @@ $(".wins").text(wins);
 $(".losses").text(losses);
 $(".totalScore").text(counter);
 
+//Start();
 
 var numberOptions = [Math.floor(Math.random() * 12) + 1, Math.floor(Math.random() * 12) + 1, Math.floor(Math.random() * 12) + 1, Math.floor(Math.random() * 12) + 1];
 console.log(numberOptions);
@@ -29,13 +30,20 @@ $(".crystal-image").on("click", function() {
      if (counter === targetNumber) {
   alert("You win!")
   wins++;
+  //Start();
 }
 
 else if (counter >= targetNumber) {
   alert("You lose, try again!")
   losses++;
+  //Start();
 }
 $(".wins").text(wins);
 $(".losses").text(losses);
 
 });
+
+
+
+// determine if its a win or loss, 
+// make sure game restarts when player wins or loses 
