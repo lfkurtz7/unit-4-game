@@ -19,7 +19,7 @@ $(".crystal-image").on("click", function () {
         wins++;
         reset();
     }
-    else if (counter > targetNumber) { // should I use > instead of >= ?? //
+    else if (counter > targetNumber) { 
         alert("You lose, try again!")
         losses++;
         reset();
@@ -29,7 +29,7 @@ $(".crystal-image").on("click", function () {
 
 });
 
-function reset() { // something isnt right with this //
+function reset() { 
     targetNumber = GetRandomNumber(19, 120);
     counter = 0;
     $("#number-to-guess").text(targetNumber);
@@ -41,17 +41,6 @@ function reset() { // something isnt right with this //
         $(this).attr("data-crystalvalue", GetRandomNumber(1, 12));
     });
 }
-// function GetTargetNumber() {
-//     return Math.floor(Math.random() * 101) + 19
-// }
-// function GetNumberOptions() {
-//     var tempArr = [];
-//     for (var i = 0; i < 4; i++) {
-//         var rand = Math.floor(Math.random() * 12) + 1;
-//         tempArr.push(rand)
-//     }
-//     return tempArr
-// }
 
 function GetRandomNumber(low, high){
     var difference = (high - low) + 1;
@@ -60,5 +49,3 @@ function GetRandomNumber(low, high){
 
 
 
-// // make sure game restarts when player wins or loses 
-// // issue with losses function
